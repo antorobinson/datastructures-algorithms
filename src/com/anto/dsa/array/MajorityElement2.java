@@ -5,10 +5,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.util.*;
 
 /**
+ * see <a href="https://leetcode.com/problems/majority-element-ii/submissions/">majority-element-ii<a/>
+ * 
  * @author Sahaya Anto Robinson
  * 
- * {@link} https://leetcode.com/problems/majority-element-ii/submissions/
- *
  */
 public class MajorityElement2 {
 
