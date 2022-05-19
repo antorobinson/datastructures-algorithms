@@ -6,6 +6,8 @@ import java.util.*;
 
 /**
  * @author Sahaya Anto Robinson
+ * 
+ * {@link} https://leetcode.com/problems/majority-element-ii/submissions/
  *
  */
 public class MajorityElement2 {
