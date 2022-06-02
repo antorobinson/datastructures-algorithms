@@ -2,11 +2,9 @@ package com.anto.dsa.array;
 
 import java.util.*;
 
-
-
 /**
- * Given an array having both positive and negative integers. 
- * The task is to compute the length of the largest subarray with sum 0.
+ * Given an array having both positive and negative integers. The task is to
+ * compute the length of the largest subarray with sum 0.
  * 
  * see <a href=
  * "https://practice.geeksforgeeks.org/problems/largest-subarray-with-0-sum/1#">largest-subarray-with-0-sum<a/>
@@ -37,8 +35,8 @@ public class LargestSubarrayWithZeroSum {
 				max = Math.max(max, i + 1);
 			} else {
 				if (map.containsKey(sum)) {
-					max = Math.max(max, i-map.get(sum));
-				}else {
+					max = Math.max(max, i - map.get(sum));
+				} else {
 					map.put(sum, i);
 				}
 			}
