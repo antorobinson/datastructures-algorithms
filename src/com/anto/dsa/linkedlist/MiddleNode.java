@@ -12,17 +12,17 @@ package com.anto.dsa.linkedlist;
 public class MiddleNode {
 
 	public static void main(String[] args) {
-		int[] arr = { 1, 2, 3, 4, 5 };
+		int[] arr = { 1, 2, 3, 4, 5, 6 };
 
 		ListNode linkedList = ListNode.createLinkedList(arr);
 
-		ListNode output = middleNode(linkedList);
+		ListNode output = findMiddleNode(linkedList);
 
 		if (output != null)
 			output.print();
 	}
 
-    public static ListNode middleNode(ListNode head) {
+    public static ListNode findMiddleNode(ListNode head) {
         
         ListNode slow = head, fast=head;
         
