@@ -1,4 +1,4 @@
-package com.anto.dsa.array;
+package com.anto.dsa.greedy;
 
 import java.util.ArrayList;
 import java.util.Comparator;
