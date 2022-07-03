@@ -22,17 +22,20 @@ public class NmeetingsInOneRoom {
 
     public static void maxMeetings(int[] start, int[] end, int n) {
 
+        // create meeting object with start, end and meeting number
         List<Meeting> meetings = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
             meetings.add(new Meeting(start[i], end[i], i + 1));
         }
 
+        // sort the meeting with meeting end value
         meetings.sort(Comparator.comparing(Meeting::getEnd).thenComparing(Meeting::getPos));
 
         List<Integer> result = new ArrayList<>();
         int limit = -1;
 
+        // compare the meeting start time with last end time
         for (Meeting m : meetings) {
             if (m.start > limit) {
                 result.add(m.pos);
